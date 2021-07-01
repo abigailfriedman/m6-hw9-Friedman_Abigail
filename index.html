@@ -5,10 +5,29 @@
     <link type="text/css" rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Weather Widget</title>
 </head>
 <body>
-    
+    <section class="top">
+        <div class="container">
+        <h1>Weather</h1>
+        <form>
+            <input class="type-city" type="text" placeholder="Search for a city" autofocus>
+            <input class="button" type="submit" value="Submit">
+        </form>
+        </div>
+    </section>
+
+    <section class="wether-box">
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
+
     <script src="main.js"></script>
 </body>
 </html>

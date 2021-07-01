@@ -1,4 +1,62 @@
 *{
     margin: 0;
     padding: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+background-image: url('background.jpeg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+ul {
+    list-style: none;
+  }
+
+.top{
+    width: 30%;
+    min-width: 300px;
+    margin: 15% auto;
+    background-color: rgba(53, 96, 189, 0.596);
+    padding: 8% 5%;
+}
+
+.top h1 {
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding-bottom: 3%;
+}
+
+.top form{
+    text-align: center;
+}
+
+.top form input{
+    font-size: 1.5em;
+    padding: 2%;
+    color: black;
+}
+
+.button{
+    background-color: blue;
+    padding: 1%;
+    margin: 1% 0 0 2%;
+}
+
+.button:hover{
+    background-color: brown;
+}
+
+.wether-box {
+ margin: 10% 0;
+}
+
+.wether-box .cities{
+    display: flex;
+    margin: 3%;
 }
