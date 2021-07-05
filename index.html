@@ -12,7 +12,35 @@
     <title>Weather Widget</title>
 </head>
 <body>
-    <section class="top">
+    <div class="app-wrap">
+        <header>
+            <input class="search-box" type="text" placeholder="Search for a city" autofocus>
+            <input class="button" type="submit" value="Submit">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Tampa, Fl</div>
+                <!--<div class="country-code"></div>-->
+            </section>
+            <div class="current">
+                <div class="temp">15 degrees</div>
+                <div class="feelsLike">amazing</div>
+                <div class="description">Sunny</div>
+            </div>
+        </main>
+    </div>
+
+
+    /*
+    Name of the Searched City with Country Code
+    Description of current weather
+    Icon image for current weather conditions
+    Current Temperature
+    Current "feels like" Temperature
+  */
+
+
+    <!--<section class="top">
         <div class="container">
         <h1>Weather</h1>
         <form>
@@ -24,9 +52,9 @@
 
     <section class="wether-box">
         <div id="weatherContainer">
-           <!--<ul id="list"></ul>-->
+           <ul id="list"></ul>
         </div>
-    </section>
+    </section>-->
 
     <script src="main.js"></script>
 </body>
