@@ -21,15 +21,24 @@ function getResults (query) {
 function displayResults (weather) {
   console.log(weather);
   let city = document.querySelector('.location .city');
-  city.innerText = weather.name, weather.sys.country;
+  city.innerText = weather.name + " , " + weather.sys.country;
 
   let temp = document.querySelector('.current .temp');
   temp.innerText = Math.round(weather.main.temp);
 
   let feelsLike = document.querySelector('.current .feelsLike');
-  feelsLike.innerText = Math.round(weather.main.feelsLike);
+  feelsLike.innerText = Math.round(weather.main.feels_like);
 
   let weather_el = document.querySelector('.current .description');
   weather_el.innerText = weather.weather[0].main;
-}
+  
 
+  var pic = document.createElement('img')
+  pic.src = 'https://openweathermap.org/img/w/"+weather[0].icon+".png';
+  document.getElementsByClassName('current').appendChild(pic)
+
+  //var icon = 'https://openweathermap.org/img/w/'+weather[0].icon+'.png';
+  //let wIcon = document.querySelector('.current .weatherIcon');
+  //wIcon.innerText = 'https://openweathermap.org/img/w/"+weather[0].icon+".png';
+ 
+}
